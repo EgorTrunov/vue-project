@@ -1,32 +1,23 @@
 <template>
   <div id="app">
     <Header />
+    <Promo />
     </div> 
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Promo from './components/Promo.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header, Promo
   }
 }
 </script>
 
 <style>
-body {
-  background: #f5f5f5;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 35px 165px;
-}
 
 @font-face {
   font-family: 'Geometria';
@@ -67,6 +58,41 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Rosanthie';
+  src: local('Rosanthie'), 
+    url('./assets/fonts/Rosanthie.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: local('Kudryashev Display') 
+    url('./assets/fonts/KudryashevDisplay.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: 'Geometria';
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 165px;
+}
+
 .button {
   width: 230px;
   padding: 12px 30px;
@@ -77,5 +103,14 @@ body {
   text-transform: uppercase;
   line-height: 20px;
   font-weight: 700;
+}
+
+.Rosanthie-text {
+  font-family: 'Rosanthie';
+  font-size: 154px;
+  line-height: 154px; 
+  color: #EDEDED;
+  transform: rotate(-17.46deg);
+  position: absolute;
 }
 </style>

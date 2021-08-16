@@ -64,6 +64,7 @@ a {
     color: #000000;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 35px;
 }
 
 ul {
@@ -169,7 +170,7 @@ ul {
 
 #ellipse {
     position: absolute;
-    left: 1230px;
+    left: 1225px;
     top: 118px;
 }
 </style>
