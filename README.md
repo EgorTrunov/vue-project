@@ -1,1 +1,1 @@
-My first poject on Vue.js
+My first project on Vue.js

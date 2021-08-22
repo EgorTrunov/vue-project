@@ -53,11 +53,6 @@ export default {
 
 <style scoped> 
 
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
 .header {
     font-family: "Geometria";
     font-weight: 400; 
@@ -68,9 +63,6 @@ a {
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
 }

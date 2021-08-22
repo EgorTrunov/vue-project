@@ -2,17 +2,19 @@
   <div id="app">
     <Header />
     <Promo />
+    <About />
     </div> 
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Promo from './components/Promo.vue'
+import About from './components/About.vue'
 
 export default {
   name: 'App',
   components: {
-    Header, Promo
+    Header, Promo, About
   }
 }
 </script>
@@ -70,9 +72,9 @@ export default {
 @font-face {
   font-family: 'Kudryashev Display';
   src: local('Kudryashev Display') 
-    url('./assets/fonts/KudryashevDisplay.woff') format('woff');
+    url('./assets/fonts/KudryashevDisplaySans.woff2') format('woff2');
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     
 }
 
@@ -91,6 +93,13 @@ body {
   width: 1100px;
   margin: 0 auto;
   padding: 0 165px;
+}
+
+.title {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
 }
 
 .button {
@@ -113,4 +122,20 @@ body {
   transform: rotate(-17.46deg);
   position: absolute;
 }
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gray {
+    color: #A3A3A3;
+}
+
 </style>
