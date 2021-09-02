@@ -126,6 +126,7 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+    cursor: pointer;
 }
 
 ul {
