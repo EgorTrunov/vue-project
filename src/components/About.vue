@@ -113,7 +113,10 @@ export default {
 }
 
 .about {
-    background: url("../assets/img/decor.svg"); 
+    background: url("../assets/img/decor.svg");
+    background-position: center; 
+    background-size: 132%;
+    margin-bottom: 60px;
 }
 
 .img__2 {

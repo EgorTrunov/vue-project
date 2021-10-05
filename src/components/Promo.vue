@@ -89,33 +89,38 @@ span {
 }
 
 .Rosanthie-text {
-    left: 390px;
-    top: 270px;
+    right: 250px;
+    top: 100px;
     font-weight: 400;
+    opacity: 0.8;
 }
 
 .promo-title-text {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    margin: -45px 0 50px -170px;
+    margin: -80px 0 50px -130px;
 }
 
 .promo-text {
     width: 450px;
 }
 
+.column-img, .column-text {
+    position: relative;
+}
+
 .promo-img {
     position: absolute;
-    left: 680px;
+    right: -30px;
 }
 
 .video {
     position: absolute;
     width: 300px;
     height: 225px;
-    left: 1000px;
-    top: 490px;
+    left: 70px;
+    bottom: 1px;
     text-align: end;
 }
 

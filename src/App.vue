@@ -3,6 +3,7 @@
     <Header />
     <Promo />
     <About />
+    <Configurator />
     </div> 
 </template>
 
@@ -10,11 +11,12 @@
 import Header from './components/Header.vue'
 import Promo from './components/Promo.vue'
 import About from './components/About.vue'
+import Configurator from './components/Сonfigurator.vue'
 
 export default {
   name: 'App',
   components: {
-    Header, Promo, About
+    Header, Promo, About, Configurator
   }
 }
 </script>
@@ -79,7 +81,7 @@ export default {
 }
 
 body {
-  background: #f5f5f5;
+  background: #ffffff;
   margin: 0;
   padding: 0;
   font-family: 'Geometria';
@@ -90,7 +92,7 @@ body {
 }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 165px;
 }
@@ -103,11 +105,12 @@ body {
 }
 
 .button {
+  display: block;
   width: 230px;
   padding: 12px 30px;
   border: 3px solid #000000;
   box-sizing: border-box;
-  background: #f5f5f5;
+  background: #ffffff;
   font-family: "Geometria";
   text-transform: uppercase;
   line-height: 20px;
@@ -121,6 +124,7 @@ body {
   color: #EDEDED;
   transform: rotate(-17.46deg);
   position: absolute;
+  font-weight: 400;
 }
 
 a {

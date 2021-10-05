@@ -133,6 +133,7 @@ ul {
 }
 
 .basket {
+    position: relative;
     margin: 0;
     display: flex;
     align-items: center;
@@ -162,7 +163,7 @@ ul {
 
 #ellipse {
     position: absolute;
-    left: 1225px;
-    top: 118px;
+    top: 5px;
+    left: 20px;
 }
 </style>
