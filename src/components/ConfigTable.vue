@@ -1,21 +1,21 @@
 <template>
     <div class="container">
-        <h2 class="title__question">Какой формы должен быть стол?</h2>
+        <h3 class="title__question">Какой формы должен быть стол?</h3>
         <ul class="question__list">
             <li class="question__item form__table">
                 <div class="question__block">
                     <img class="form__table-img" src="@/assets/img/form_rectangle.jpg" alt="Стол прямоугольной формы" width="350" height="232">
-                    <h3 class="form__table-title">Прямоугольным</h3>
+                    <h4 class="form__table-title">Прямоугольным</h4>
                     <p class="form__table-text">Подоберите все необходимое для оформления завершенного, гармоничного, стильного и уютного интерьера своей квартиры или дома в одном месте.</p>
                 </div>
                 <div class="question__block">
                     <img class="form__table-img" src="@/assets/img/form_square.jpg" alt="Стол квадратной формы" width="350" height="232">
-                    <h3 class="form__table-title">Квадратным</h3>
+                    <h4 class="form__table-title">Квадратным</h4>
                     <p class="form__table-text">Подоберите все необходимое для оформления завершенного, гармоничного, стильного и уютного интерьера своей квартиры или дома в одном месте.</p>                    
                 </div>
                 <div class="question__block">
                     <img class="form__table-img" src="@/assets/img/form_circle.jpg" alt="Стол круглой формы" width="350" height="232">
-                    <h3 class="form__table-title">Круглым</h3>
+                    <h4 class="form__table-title">Круглым</h4>
                     <p class="form__table-text">Подоберите все необходимое для оформления завершенного, гармоничного, стильного и уютного интерьера своей квартиры или дома в одном месте.</p>
                 </div>
             </li>

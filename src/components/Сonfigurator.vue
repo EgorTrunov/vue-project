@@ -12,14 +12,13 @@
                             <img src="@/assets/img/rectangle__menu.svg" alt="">
                         </li>
                         <li class="question__item">
-                            <img class="img" src="@/assets/img/rectangle__menu.svg" alt="">
+                            <img src="@/assets/img/rectangle__menu.svg" alt="">
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <h2 class="title">Соберите свой индивидуальный стол</h2>
-        <ConfigTable />
         <button class="button">Следующий вопрос</button>
         <div class="client__order">
             <img src="@/assets/img/client-order-img1.jpg">
@@ -35,11 +34,14 @@
 </template>
 
 <script>
-import ConfigTable from "./ConfigTable.vue"
 
 export default {
     name: 'Configurator',
-    components: ConfigTable
+    data() {
+        return {
+
+        }
+    }
 }
 </script>
 

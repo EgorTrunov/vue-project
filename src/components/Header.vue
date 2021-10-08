@@ -2,7 +2,18 @@
     <div class="container">
         <header class="header">
             <section class="info">
-                <a class="nav-logo"><img src="@/assets/img/nav.png" width="23" height="16"></a>
+                <nav class="nav-menu">
+                    <transition name="fade" mode="out-in">
+                       <img class="img-menu" src="@/assets/img/nav.png" width="23" height="23" v-if="!show" @click="show = !show" key="menu">
+                       <img class="img-menu" src="@/assets/img/close.png" width="23" height="23" v-else @click="show = !show" key="clear">
+                    </transition>
+                    <transition mode="fade">
+                        <ul class="nav-menu__list" v-if="show">
+                            <li class="nav-menu__item" v-for="item in items" :key="item.id">{{ item }}</li>
+                        </ul>
+                    </transition>
+                   
+                </nav> 
                 <ul class="info-list">
                     <li class="info-item">
                         <h3 class="info-heading city">Москва</h3>
@@ -48,6 +59,18 @@
 <script>
 export default {
     name: 'Header',
+    data() {
+        return {
+            items: [
+                'Каталог',
+                'Информация',
+                'Мебель на заказ',
+                'Корзина',
+                'Контакты'
+            ],
+            show: false
+        }
+    }
 }
 </script>
 
@@ -67,7 +90,7 @@ ul {
     justify-content: space-between;
 }
 
-.nav-logo {
+.nav-menu {
     padding-top: 5px;
     margin-right: 70px;
 }
@@ -165,5 +188,26 @@ ul {
     position: absolute;
     top: 5px;
     left: 20px;
+}
+
+/* стили для выпадающего списка */
+.nav-menu__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #ffffff;
+    height: 200px;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 5px 5px 2px 1px #9a9a9a;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.nav-menu__item {
+    font-family: "Geometria";
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 700;
 }
 </style>
